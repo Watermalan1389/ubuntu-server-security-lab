@@ -1,5 +1,3 @@
-Overview
-
 This experiment demonstrates a brute-force attack against an SSH server using the password cracking tool Hydra.
 
 The goal of this test is to simulate a real-world attack where an attacker attempts to gain unauthorized access to a server by trying many passwords from a common password list.
@@ -28,11 +26,13 @@ The attack uses the rockyou.txt password wordlist, which contains millions of co
 
 Location of the wordlist:
 
-/usr/share/wordlists/rockyou.txt Hydra Command
+/usr/share/wordlists/rockyou.txt
+Hydra Command
 
 The following command was used to perform the brute-force attack:
 
-sudo hydra -l watermalan -P /usr/share/wordlists/rockyou.txt -t 4 ssh://192.168.100.141 Command Explanation
+sudo hydra -l watermalan -P /usr/share/wordlists/rockyou.txt -t 4 ssh://192.168.100.141
+Command Explanation
 
 -l specifies the target username
 
